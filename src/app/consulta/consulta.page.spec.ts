@@ -24,4 +24,6 @@ describe('ConsultaPage', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  //jeje esto es para mi primer commit, probando probando..
 });
