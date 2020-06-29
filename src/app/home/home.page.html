@@ -5,7 +5,7 @@
         <ion-icon ios="md-contact" md="md-contact"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title color="light" text-center>Home</ion-title>
+    <ion-title color="light" text-center>Inicio</ion-title>
     <ion-buttons slot="end">
       <ion-button color="light" (click)="initSearch()">
         <ion-icon ios="ios-search" md="ios-search"></ion-icon>
@@ -32,28 +32,28 @@
       <ion-slide>
         <div class="slides__featured">
           <div class="banner" style="background-image: url('assets/images/genomics.png')">
-            <div class="main-text">Genomics</div>
+            <div class="main-text"></div>
           </div>
         </div>
       </ion-slide>
       <ion-slide>
         <div class="slides__featured">
           <div class="banner" style="background-image: url('assets/images/dermatoscopy.jpg')">
-            <div class="main-text">Virtual Dermatoscopy</div>
+            <div class="main-text"></div>
           </div>
         </div>
       </ion-slide>
       <ion-slide>
         <div class="slides__featured">
           <div class="banner" style="background-image: url('assets/images/tourism.jpg')">
-            <div class="main-text">Healthcare Tourism</div>
+            <div class="main-text"></div>
           </div>
         </div>
       </ion-slide>
       <ion-slide>
         <div class="slides__featured">
           <div class="banner" style="background-image: url('assets/images/blogs.jpg')">
-            <div class="main-text">Blogs</div>
+            <div class="main-text"></div>
           </div>
         </div>
       </ion-slide>
@@ -309,48 +309,7 @@
       </ion-slide>
     </ion-slides>
   </section>
-  <!-- News -->
-  <section>
-    <ion-label class="section__title" slot="start">
-      Top News
-      <ion-text class="more-link" text-right routerLink="/news" routerDirection="forward">View All</ion-text>
-    </ion-label>
-    <ion-list class="news-list">
-      <ion-item lines="inset">
-        <ion-thumbnail slot="end">
-          <img src="//via.placeholder.com/200" alt="...">
-        </ion-thumbnail>
-        <ion-label text-wrap>
-          <ion-text color="primary">
-            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-          </ion-text>
-          <p>Lorem, ipsum dolor.</p>
-        </ion-label>
-      </ion-item>
-      <ion-item lines="inset">
-        <ion-thumbnail slot="end">
-          <img src="//via.placeholder.com/200" alt="...">
-        </ion-thumbnail>
-        <ion-label text-wrap>
-          <ion-text color="primary">
-            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-          </ion-text>
-          <p>Lorem, ipsum dolor.</p>
-        </ion-label>
-      </ion-item>
-      <ion-item lines="inset">
-        <ion-thumbnail slot="end">
-          <img src="//via.placeholder.com/200" alt="...">
-        </ion-thumbnail>
-        <ion-label text-wrap>
-          <ion-text color="primary">
-            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-          </ion-text>
-          <p>Lorem, ipsum dolor.</p>
-        </ion-label>
-      </ion-item>
-    </ion-list>
-  </section>
+  
   <!-- Privacy policy -->
   <section class="announcement static" *ngIf="1">
     <div class="close-btn" (click)="hideBanner()">&times;</div>
@@ -370,9 +329,8 @@
   <!-- Appo -->
   <section>
     <ion-label class="section__title" slot="start">
-      Recent Appointments
-      <ion-text class="more-link" text-right routerLink="/schedule" routerDirection="forward">See All
-      </ion-text>
+      Nuestros Médicos
+     
     </ion-label>
     <div class="overscroll-wrapper">
       <ion-slides class="slides__dashboard contact-list" [options]="patientsSlideOpts">
@@ -388,61 +346,7 @@
       </ion-slides>
     </div>
   </section>
-  <!-- Videos -->
-  <section>
-    <ion-label class="section__title" slot="start">
-      Videos
-      <ion-text class="more-link" text-right (click)="navigateTo('VID')">View All</ion-text>
-    </ion-label>
-    <ion-slides class="slides__dashboard eduvids" [options]="eduVidslideOpts">
-      <ion-slide tappable *ngFor="let item of videos">
-        <div class="video-tile" (click)="playVideo(item)">
-          <div class="cover" [class.show-play-btn]="1">
-            <img [src]="item.video.thumbnailUrl" alt="...">
-          </div>
-          <span class="title">{{item.title}}</span>
-        </div>
-      </ion-slide>
-    </ion-slides>
-  </section>
-  <!-- Q Settings -->
-  <section>
-    <ion-label class="section__title">Quick Settings</ion-label>
-    <div class="list-wrapper settings">
-      <ion-list>
-        <ion-item lines="inset">
-          <ion-label>Licence</ion-label>
-          <ion-label slot="end" text-right>
-            <ion-text color="primary">Free</ion-text>
-          </ion-label>
-        </ion-item>
-        <ion-item lines="inset" class="clickable" (click)="openTopics()">
-          <ion-label>Common Topics</ion-label>
-          <ion-label slot="end" text-right>
-            <ion-text color="primary" class="topics">
-              <span>Topic 1</span>
-              <span>Topic 2</span>
-            </ion-text>
-          </ion-label>
-        </ion-item>
-        <ion-item lines="inset">
-          <ion-label>Dark Mode</ion-label>
-          <ion-toggle slot="end" (ionChange)="changeUIMode($event)" [checked]="darkMode"></ion-toggle>
-        </ion-item>
-        <ion-item lines="inset">
-          <ion-label>Do not disturb</ion-label>
-          <ion-toggle slot="end"></ion-toggle>
-        </ion-item>
-        <ion-item lines="none" detail>
-          <ion-label>
-            <ion-text color="primary">
-              <small>View All Settings</small>
-            </ion-text>
-          </ion-label>
-        </ion-item>
-      </ion-list>
-    </div>
-  </section>
+  
 </ion-content>
 <ion-footer class="flat">
   <footer-tabs></footer-tabs>

@@ -5,7 +5,7 @@
         <ion-icon ios="md-contact" md="md-contact"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title color="light" text-center>Schedule</ion-title>
+    <ion-title color="light" text-center>Calendario</ion-title>
     <ion-buttons slot="end">
       <ion-button color="light" (click)="initSearch()">
           <ion-icon ios="ios-search" md="ios-search"></ion-icon>
@@ -46,7 +46,7 @@
         <app-slot-item *ngFor="let slot of appointments" [appo]="slot" (appoSelected)="showAppoInfo(slot)"></app-slot-item>
       </div>
       <div class="appo__none" *ngIf="noAppos">
-        No appointments
+        Sin citas
       </div>
     </ng-template>
   </section>
