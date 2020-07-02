@@ -1,6 +1,6 @@
 <nav>
   <button (click)="switchTabs('home', 1)" [class.current]="selectedTab === 1">
-    <ion-icon ios="md-apps" md="md-apps"></ion-icon>
+    <ion-icon ios="ios-home" md="md-home"></ion-icon>
     <span class="text">Inicio</span>
   </button>
   <button (click)="switchTabs('schedule', 2)" [class.current]="selectedTab === 2">
@@ -11,7 +11,7 @@
     <button (click)="callSylvie()"></button>
   </div>
   <button (click)="switchTabs('mailbox', 3)" [class.current]="selectedTab === 3">
-    <ion-icon ios="md-mail" md="md-body"></ion-icon>
+    <ion-icon ios="md-people" md="md-people"></ion-icon>
     <span class="text">Pacientes</span>
   </button>
   <button (click)="switchTabs('notifications', 4)" [class.current]="selectedTab === 4">

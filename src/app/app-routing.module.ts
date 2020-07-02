@@ -60,7 +60,8 @@ const routes: Routes = [
   { path: 'expediente', loadChildren: './expediente/expediente.module#ExpedientePageModule' },
   { path: 'factura', loadChildren: './factura/factura.module#FacturaPageModule' },
   { path: 'caja-diario', loadChildren: './caja-diario/caja-diario.module#CajaDiarioPageModule' },
-  { path: 'reporte', loadChildren: './reporte/reporte.module#ReportePageModule' }
+  { path: 'reporte', loadChildren: './reporte/reporte.module#ReportePageModule' },
+  { path: 'pacientes', loadChildren: './pacientes/pacientes.module#PacientesPageModule' }
 ];
 
 @NgModule({
