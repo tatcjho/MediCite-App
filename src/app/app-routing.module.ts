@@ -54,14 +54,14 @@ const routes: Routes = [
   { path: 'medicamento-detalle', loadChildren: './medicamento-detalle/medicamento-detalle.module#MedicamentoDetallePageModule' },
   { path: 'receta', loadChildren: './receta/receta.module#RecetaPageModule' },
   { path: 'diagnostico', loadChildren: './diagnostico/diagnostico.module#DiagnosticoPageModule' },
-  { path: 'consulta', loadChildren: './consulta/consulta.module#ConsultaPageModule' },
   { path: 'certificado', loadChildren: './certificado/certificado.module#CertificadoPageModule' },
   { path: 'archivo', loadChildren: './archivo/archivo.module#ArchivoPageModule' },
   { path: 'expediente', loadChildren: './expediente/expediente.module#ExpedientePageModule' },
   { path: 'factura', loadChildren: './factura/factura.module#FacturaPageModule' },
   { path: 'caja-diario', loadChildren: './caja-diario/caja-diario.module#CajaDiarioPageModule' },
   { path: 'reporte', loadChildren: './reporte/reporte.module#ReportePageModule' },
-  { path: 'pacientes', loadChildren: './pacientes/pacientes.module#PacientesPageModule' }
+  { path: 'pacientes', loadChildren: './pacientes/pacientes.module#PacientesPageModule' },
+  { path: 'crear-consulta', loadChildren: './consulta/crear-consulta/crear-consulta.module#CrearConsultaPageModule' }
 ];
 
 @NgModule({
