@@ -49,10 +49,8 @@ const routes: Routes = [
     path: 'wallet',
     loadChildren: './wallet/wallet.module#WalletPageModule'
   },
-  { path: 'error', loadChildren: './error/error.module#ErrorPageModule' },
-  /*revisar como hacer un meto de mostrar la pagina 404*/
+  //{ path: '**', loadChildren: './error/error.module#ErrorPageModule' },
   { path: 'medicamento', loadChildren: './medicamento/medicamento.module#MedicamentoPageModule' },
-  // tslint:disable-next-line:max-line-length
   { path: 'medicamento-detalle', loadChildren: './medicamento-detalle/medicamento-detalle.module#MedicamentoDetallePageModule' },
   { path: 'receta', loadChildren: './receta/receta.module#RecetaPageModule' },
   { path: 'diagnostico', loadChildren: './diagnostico/diagnostico.module#DiagnosticoPageModule' },
@@ -63,7 +61,6 @@ const routes: Routes = [
   { path: 'caja-diario', loadChildren: './caja-diario/caja-diario.module#CajaDiarioPageModule' },
   { path: 'reporte', loadChildren: './reporte/reporte.module#ReportePageModule' },
   { path: 'pacientes', loadChildren: './pacientes/pacientes.module#PacientesPageModule' },
-  // tslint:disable-next-line:max-line-length
   { path: 'crear-consulta', loadChildren: './consulta/crear-consulta/crear-consulta.module#CrearConsultaPageModule' }
 ];
 

@@ -49,8 +49,7 @@ const routes: Routes = [
     path: 'wallet',
     loadChildren: './wallet/wallet.module#WalletPageModule'
   },
-  { path: 'error', loadChildren: './error/error.module#ErrorPageModule' },
-  /*revisar como hacer un meto de mostrar la pagina 404*/
+  { path: '/ ', loadChildren: './error/error.module#ErrorPageModule' },
   { path: 'medicamento', loadChildren: './medicamento/medicamento.module#MedicamentoPageModule' },
   // tslint:disable-next-line:max-line-length
   { path: 'medicamento-detalle', loadChildren: './medicamento-detalle/medicamento-detalle.module#MedicamentoDetallePageModule' },
