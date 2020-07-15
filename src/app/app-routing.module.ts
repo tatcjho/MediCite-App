@@ -51,7 +51,6 @@ const routes: Routes = [
   },
   { path: 'error', loadChildren: './error/error.module#ErrorPageModule' },
   /*revisar como hacer un meto de mostrar la pagina 404*/
-  { path: 'medicamento', loadChildren: './medicamento/medicamento.module#MedicamentoPageModule' },
   // tslint:disable-next-line:max-line-length
   { path: 'medicamento-detalle', loadChildren: './medicamento-detalle/medicamento-detalle.module#MedicamentoDetallePageModule' },
   { path: 'receta', loadChildren: './receta/receta.module#RecetaPageModule' },
@@ -64,7 +63,10 @@ const routes: Routes = [
   { path: 'reporte', loadChildren: './reporte/reporte.module#ReportePageModule' },
   { path: 'pacientes', loadChildren: './pacientes/pacientes.module#PacientesPageModule' },
   // tslint:disable-next-line:max-line-length
-  { path: 'crear-consulta', loadChildren: './consulta/crear-consulta/crear-consulta.module#CrearConsultaPageModule' }
+  { path: 'crear-consulta', loadChildren: './consulta/crear-consulta/crear-consulta.module#CrearConsultaPageModule' },
+  { path: 'crear-medicamento', loadChildren: './medicamentos/crear-medicamento/crear-medicamento.module#CrearMedicamentoPageModule' },
+  { path: 'listar-medicamento', loadChildren: './medicamentos/listar-medicamento/listar-medicamento.module#ListarMedicamentoPageModule' }
+
 ];
 
 @NgModule({
